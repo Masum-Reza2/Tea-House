@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drink tea | the way you want.</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0f3e3c819f.js" crossorigin="anonymous"></script>
     <!-- Tailwind custom color -->
     <script>
         tailwind.config = {
@@ -21,22 +23,55 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
-        *{
+
+        * {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    
+
     <header>
-        <h1 class="text-3xl">hello world!</h1>
+        <!-- Good tea section -->
+        <section class="max-w-7xl mx-auto p-5 md:p-8 lg:p-12">
+            <div class="flex flex-col items-center lg:flex-row justify-center lg:px-32">
+
+                <div class="flex-1 space-y-4 flex flex-col items-center lg:items-start">
+                    <h1 class="text-2xl md:first-letter:text-4xl lg:text-5xl font-extrabold">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House
+                    </h1>
+                    <p class="text-[#777] text-sm lg:pr-48">Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.</p>
+                    <button class="btn text-white bg-gradient-to-r from-[#F00] to-[#FF8938]">Explore More <i
+                            class="fa-solid fa-arrow-trend-up"></i></button>
+
+                </div>
+
+                <div class="flex-1 lg:translate-y-14 cursor-pointer relative">
+                    <div>
+                        <img src="./images/banner.png" alt="">
+                    </div>
+
+                    <div class="bg-white shadow-xl max-w-[250px] flex items-center justify-center gap-4 p-5 absolute left-10 bottom-0">
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <div>
+                            <h5 class="text-xl font-extrabold">5.00</h5>
+                            <p class="text-[#777] text-sm">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </header>
 
     <main></main>
 
     <footer></footer>
-    
+
 </body>
 
 </html>
